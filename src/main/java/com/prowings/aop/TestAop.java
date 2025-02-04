@@ -13,6 +13,9 @@ public class TestAop {
 		PaymentService service = ctx.getBean(PaymentService.class);
 		
 		service.doPayment();
+		
+		service.doTransfer();
+		
 		System.out.println("main ended!!");
 	}
 
